@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.Calculater {
+			border: 2px solid black;
+			width: 310px;
+			height: 295px;
+			margin-top: 30px;
+			margin-left: 300px;
+		}
+
+		.input {
+			border: 3px solid black;
+			width: 300px;
+			height: 30px;
+			font-size: larger;
+			font-weight: bolder;
+		}
+
+		.btn1 {
+			color: rgb(14, 13, 13);
+			width: 73px;
+			height: 30px;
+			margin-top: 2px;
+			margin-left: 1px;
+			font-size: larger;
+			font-weight: bolder;
+			background-color: rgb(78, 167, 167);
+		}
+
+		.btn1:hover {
+			color: aqua;
+		}
+
+		.btn2 {
+			color: rgb(14, 13, 13);
+			width: 73px;
+			height: 30px;
+			margin-top: 2px;
+			margin-left: 1px;
+			font-size: larger;
+			font-weight: bolder;
+			background-color: rgb(78, 167, 167);
+		}
+
+		.btn4 {
+			font-size: larger;
+			width: 73px;
+			background-color: rgb(78, 167, 167);
+			margin: 2.2px;
+			/* margin-left: 74px; */
+			float: left;
+			font-weight: bolder;
+		}
+
+		.btn3 {
+			font-size: larger;
+			width: 113.4px;
+			background-color: rgb(120, 113, 184);
+			margin-top: 2px;
+			font-weight: bolder;
+		}
+
+		.specialValue {
+			font-size: larger;
+			width: 58.5px;
+			background-color: rgb(24, 219, 56);
+			margin-top: 2px;
+			font-weight: bolder;
+		}
+
+		h1 {
+			margin-left: 300px;
+		}
+	</style>
+	<script src="/home/wv/Code /Calc.js/classcalc-challenge-1/script.js"></script>
+
+</head>
+
+<body>
+
+	<h1>Calculater Task</h1>
+
+	<div class="Calculater">
+		<div>
+			<input class="input" type="text" id="calc" name="">
+
+			<button class="specialValue" type="button" onclick="pi('3.141')">π</button>
+			<input class="specialValue" type="button" onclick="sqr('sqr(')" value="sqr">
+			<input class="specialValue" type="button" onclick="cube('cube(')" value="cube">
+			<input class="specialValue" type="button" value="√" onclick="sqrt('sqrt(')">
+			<input class="specialValue" type="button" value="%" onclick="getValue('%')">
+		</div>
+		<div>
+			<input class="btn1" type="button" value="7" onclick="getValue('7')">
+			<input class="btn1" type="button" value="8" onclick="getValue('8')">
+			<input class="btn1" type="button" value="9" onclick="getValue('9')">
+			<input class="btn1" type="button" value="+" onclick="getOperator('+')">
+		</div>
+		<div>
+			<input class="btn1" type="button" value="4" onclick="getValue('4')">
+			<input class="btn1" type="button" value="5" onclick="getValue('5')">
+			<input class="btn1" type="button" value="6" onclick="getValue('6')">
+			<input class="btn1" type="button" value="-" onclick="getOperator('-')">
+		</div>
+		<div>
+			<input class="btn1" type="button" value="1" onclick="getValue('1')">
+			<input class="btn1" type="button" value="2" onclick="getValue('2')">
+			<input class="btn1" type="button" value="3" onclick="getValue('3')">
+			<input class="btn1" type="button" value="x" onclick="getOperator('*')">
+		</div>
+		<div>
+			<input class="btn1" type="button" value="0" onclick="getValue('0')">
+			<input class="btn1" type="button" value="(" onclick="getOperator('(')">
+			<input class="btn1" type="button" value=")" onclick="getOperator(')')">
+			<input class="btn1" type="button" value="/" onclick="getOperator('/')">
+
+		</div>
+
+		<div>
+			<input class="btn1" type="button" value="=" onclick="getResult()">
+			<input class="btn1" type="button" value="⌫" onclick="backSpace()">
+			<input class="btn2" type="button" value="AC" onclick="reset(calc.val)">
+			<input class="btn2" type="button" value="resin" onclick="resin('resin(')">
+		</div>
+
+		<input class="btn1" type="button" value="." onclick="getOperator('.')">
+		<button class="btn3" onclick="deg()">Degree</button>
+		<button class="btn3" onclick="rad()">radian</button>
+		<div id="radian" style="display: none;">
+			<input class="btn4" type="button" value="rsin" onclick="rSin('rSin(')" />
+			<input class="btn4" type="button" value="rcos" onclick="rCos('rCos(')">
+		</div>
+		<div id="degree" style="display: none;">
+			<input class="btn4" type="button" value="dsin" onclick="dSin('dSin(')" />
+			<input class="btn4" type="button" value="dcos" onclick="dCos('dCos(')">
+		</div>
+
+		<!-- <input class="specialValue" type="button" onclick="fact(calc.value)" value="facto"> -->
+
+	</div>
+</body>
+
+</html>
